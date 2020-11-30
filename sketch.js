@@ -31,9 +31,6 @@ function setup() {
   for(var i = 10; i<width; i = i+90){
     plinkos.push(new Plinko(i, 540, 5));
   }
-  for(var i = 10; i<width; i = i+5){
-    particles.push(new Particles(i, 5, 5));
-  }
   Engine.run(engine);
 }
 
@@ -52,10 +49,10 @@ function draw() {
   for(var i = 0; i<plinkos.length; i++){
     plinkos[i].display();
   }
-  for(var i = 0; i<particles.length; i++){
-    particles[i].display();
+  if(frameCount%60===0){
+    particles.push(new Particles(random(width/2+10, 5, 5)));
   }
-  particle1.display();
+  particles[i].display();
   ground1.display();
   drawSprites();
 }
