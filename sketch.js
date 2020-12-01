@@ -31,6 +31,9 @@ function setup() {
   for(var i = 10; i<width; i = i+90){
     plinkos.push(new Plinko(i, 540, 5));
   }
+  for(var i = 5; i<width;){
+    particles.push(new Particles(i, 10, 5));
+  }
   Engine.run(engine);
 }
 
