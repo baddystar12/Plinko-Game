@@ -19,20 +19,17 @@ function setup() {
   for(var i = 10; i<width; i = i+100){
     divisions.push(new Division(i, 680, 5, 200));
   }
-  for(var i = 10; i<width; i = i+90){
+  for(var i = 10; i<width; i = i+70){
     plinkos.push(new Plinko(i, 435, 5));
   }
-  for(var i = 10; i<width; i = i+90){
+  for(var i = 30; i<width; i = i+70){
     plinkos.push(new Plinko(i, 470, 5));
   }
-  for(var i = 10; i<width; i = i+90){
+  for(var i = 10; i<width; i = i+70){
     plinkos.push(new Plinko(i, 505, 5));
   }
-  for(var i = 10; i<width; i = i+90){
+  for(var i = 30; i<width; i = i+70){
     plinkos.push(new Plinko(i, 540, 5));
-  }
-  for(var i = 5; i<width;){
-    particles.push(new Particles(i, 10, 5));
   }
   Engine.run(engine);
 }
