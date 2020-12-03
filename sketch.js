@@ -53,9 +53,11 @@ function draw() {
     plinkos[i].display();
   }
   if(frameCount%60===0){
-    particles.push(new Particles(random(width/2+10, 5, 5)));
+    particles.push(new Particles(random(width/2-20, width/2+20),5, 5));
   }
-  particles[i].display();
+  for(var i = 0; i<particles.length;i++){
+    particles[i].display();
+  }
   ground1.display();
   drawSprites();
 }
