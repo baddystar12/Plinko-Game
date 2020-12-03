@@ -50,7 +50,7 @@ function draw() {
     plinkos[i].display();
   }
   if(frameCount%60===0){
-    particles.push(new Particles(random(width/2-20, width/2+20),5, 5));
+    particles.push(new Particles(random(width/2-100, width/2+100),5, 5));
   }
   for(var i = 0; i<particles.length;i++){
     particles[i].display();
